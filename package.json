@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "npx @biomejs/biome check .",
-    "format": "npx @biomejs/biome check --apply .",
-    "format:unsafe": "npx @biomejs/biome check --apply-unsafe ."
+    "dev": "bun --bun x next dev",
+    "build": "bun --bun x next build",
+    "start": "bun --bun x next start",
+    "lint": "bunx @biomejs/biome check .",
+    "format": "bunx @biomejs/biome check --apply .",
+    "format:unsafe": "bunx @biomejs/biome check --apply-unsafe ."
   },
   "dependencies": {
     "react": "^18",
