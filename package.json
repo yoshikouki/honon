@@ -11,9 +11,10 @@
     "format:unsafe": "bunx @biomejs/biome check --apply-unsafe ."
   },
   "dependencies": {
+    "hono": "^4.2.9",
+    "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.3"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@biomejs/biome": "1.7.1",
