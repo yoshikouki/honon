@@ -1,17 +1,22 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { client } from "@/server/client";
+import useSWR from "swr";
 
 export const ClientComponent = () => {
-  const [time, setTime] = useState("");
-
-  useEffect(() => {
-    fetch("/api/time")
-      .then((res) => res.json())
-      .then((data) => setTime(data.message));
-  }, []);
-
-  return (
-    <div className="text-2xl tabular-nums">C: {time ? time : "undefined"}</div>
+  const request = client.time;
+  const { data, isLoading, error } = useSWR(
+    request.$url().pathname,
+    async () => {
+      const res = await request.$get();
+      return await res.json();
+    },
   );
+
+  if (isLoading) return <div className="text-2xl tabular-nums">Loading...</div>;
+  if (error) {
+    return <div className="text-2xl tabular-nums">Error</div>;
+  }
+
+  return <div className="text-2xl tabular-nums">C: {data?.message}</div>;
 };

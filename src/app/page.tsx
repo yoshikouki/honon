@@ -1,10 +1,9 @@
+import { client } from "@/server/client";
 import { ClientComponent } from "./client-component";
 
 export default async function HomePage() {
-  const response = await fetch("http://localhost:8888/api/time");
-  console.log("response.body:", response.body);
-  const { message } = await response.json();
-  console.log(message);
+  const res = await client.time.$get();
+  const { message } = await res.json();
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center gap-10">
