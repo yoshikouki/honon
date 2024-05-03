@@ -1,13 +1,10 @@
+import { app as server } from "@/server";
 import { Hono } from "hono";
 import { handle } from "hono/vercel";
 
 const app = new Hono().basePath("/api");
 
-const routes = app.get("/time", (c) => {
-  return c.json({
-    message: new Date().toISOString(),
-  });
-});
+app.route("/", server);
 
 export const GET = handle(app);
 export const POST = handle(app);
