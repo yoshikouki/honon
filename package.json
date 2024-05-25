@@ -8,7 +8,8 @@
     "start": "bun --bun x next start",
     "lint": "bunx @biomejs/biome check .",
     "format": "bunx @biomejs/biome check --apply .",
-    "format:unsafe": "bunx @biomejs/biome check --apply-unsafe ."
+    "format:unsafe": "bunx @biomejs/biome check --apply-unsafe .",
+    "update:all": "bunx npm-check-updates -u"
   },
   "dependencies": {
     "hono": "^4.2.9",
