@@ -7,8 +7,8 @@
     "build": "bun --bun x next build",
     "start": "bun --bun x next start",
     "lint": "bunx @biomejs/biome check .",
-    "format": "bunx @biomejs/biome check --apply .",
-    "format:unsafe": "bunx @biomejs/biome check --apply-unsafe .",
+    "format": "bunx @biomejs/biome check --write .",
+    "format:unsafe": "bunx @biomejs/biome check --write --unsafe .",
     "update:all": "bunx npm-check-updates -u"
   },
   "dependencies": {
