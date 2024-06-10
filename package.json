@@ -19,7 +19,7 @@
     "swr": "^2.2.5"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.7.3",
+    "@biomejs/biome": "1.8.1",
     "@happy-dom/global-registrator": "^14.11.0",
     "@testing-library/react": "^16.0.0",
     "@types/bun": "^1.1.3",
