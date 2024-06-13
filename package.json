@@ -17,6 +17,7 @@
     "next": "^15.0.0-rc.0",
     "react": "^19.0.0-rc-20b6f4c0e8-20240607",
     "react-dom": "^19.0.0-rc-20b6f4c0e8-20240607",
+    "satori": "^0.10.13",
     "swr": "^2.2.5"
   },
   "devDependencies": {
