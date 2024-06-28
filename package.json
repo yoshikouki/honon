@@ -13,18 +13,19 @@
   },
   "dependencies": {
     "babel-plugin-react-compiler": "^0.0.0-experimental-938cd9a-20240601",
-    "hono": "^4.4.4",
+    "hono": "^4.4.9",
     "next": "^15.0.0-rc.0",
+    "next-auth": "^5.0.0-beta.19",
     "react": "^19.0.0-rc-20b6f4c0e8-20240607",
     "react-dom": "^19.0.0-rc-20b6f4c0e8-20240607",
     "satori": "^0.10.13",
     "swr": "^2.2.5"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.8.1",
-    "@happy-dom/global-registrator": "^14.12.0",
+    "@biomejs/biome": "1.8.3",
+    "@happy-dom/global-registrator": "^14.12.3",
     "@testing-library/react": "^16.0.0",
-    "@types/bun": "^1.1.3",
+    "@types/bun": "^1.1.6",
     "@types/node": "^20",
     "@types/react": "npm:types-react@rc",
     "@types/react-dom": "npm:types-react-dom@rc",
