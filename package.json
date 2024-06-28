@@ -9,15 +9,15 @@
     "lint": "bunx @biomejs/biome check .",
     "format": "bunx @biomejs/biome check --write .",
     "format:unsafe": "bunx @biomejs/biome check --write --unsafe .",
-    "update:all": "bunx npm-check-updates -u"
+    "update:all": "bun update --latest"
   },
   "dependencies": {
-    "babel-plugin-react-compiler": "^0.0.0-experimental-938cd9a-20240601",
+    "babel-plugin-react-compiler": "^0.0.0-experimental-696af53-20240625",
     "hono": "^4.4.9",
     "next": "^15.0.0-rc.0",
     "next-auth": "^5.0.0-beta.19",
-    "react": "^19.0.0-rc-e02baf6c92-20240627",
-    "react-dom": "^19.0.0-rc-e02baf6c92-20240627",
+    "react": "^19.0.0-rc-58af67a8f8-20240628",
+    "react-dom": "^19.0.0-rc-58af67a8f8-20240628",
     "satori": "^0.10.13",
     "swr": "^2.2.5"
   },
@@ -26,11 +26,11 @@
     "@happy-dom/global-registrator": "^14.12.3",
     "@testing-library/react": "^16.0.0",
     "@types/bun": "^1.1.6",
-    "@types/node": "^20",
-    "@types/react": "npm:types-react@rc",
-    "@types/react-dom": "npm:types-react-dom@rc",
-    "postcss": "^8",
+    "@types/node": "^20.14.9",
+    "@types/react": "npm:types-react@^19.0.0-alpha.3",
+    "@types/react-dom": "npm:types-react-dom@^19.0.0-alpha.3",
+    "postcss": "^8.4.38",
     "tailwindcss": "^3.4.4",
-    "typescript": "^5"
+    "typescript": "^5.5.2"
   }
 }
