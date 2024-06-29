@@ -2,6 +2,7 @@ import { url } from "@/lib/url";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../public/logo.webp";
+import { ThemeToggle } from "./theme-toggle";
 
 export const Header = () => {
   return (
@@ -15,6 +16,7 @@ export const Header = () => {
           <Image src={Logo} alt="honon" width={80} height={80} />
           <h1 className="font-black text-6xl">HonoN</h1>
         </Link>
+        <ThemeToggle />
       </div>
     </header>
   );

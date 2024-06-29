@@ -3,6 +3,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import { Footer } from "./footer";
 import { Header } from "./header";
+import { ThemeProvider } from "./theme-provider";
 
 export { metadata, viewport } from "./metadata";
 
@@ -14,11 +15,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      // For next-theme
+      suppressHydrationWarning
+    >
       <body className={inter.className}>
-        <Header />
-        {children}
-        <Footer />
+        <ThemeProvider>
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
