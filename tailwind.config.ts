@@ -2,7 +2,12 @@ import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
-  content: ["./src/**/*.{ts,tsx}"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -62,43 +67,14 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        "swipe-x": {
-          "0%, 100%": { transform: "translateX(0)" },
-          "33%": { transform: "translateX(77%)" },
-          "66%": { transform: "translateX(-77%)" },
-        },
-        rotate: {
-          "0%": { transform: "rotate(0deg)" },
-          "20%": { transform: "rotate(0deg)" },
-          "25%": { transform: "rotate(90deg)" },
-          "45%": { transform: "rotate(90deg)" },
-          "50%": { transform: "rotate(180deg)" },
-          "70%": { transform: "rotate(180deg)" },
-          "75%": { transform: "rotate(270deg)" },
-          "95%": { transform: "rotate(270deg)" },
-          "100%": { transform: "rotate(360deg)" },
-        },
-        touch: {
-          "40%": { transform: "scale(1)" },
-          "70%": { transform: "scale(0.8)" },
-          "100%": { transform: "scale(1)" },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "swipe-x": "swipe-x 3s infinite",
-        rotate: "rotate 4s infinite ease-out",
-        touch: "touch 1s infinite ease-out",
-      },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 } satisfies Config;
 
 export default config;
