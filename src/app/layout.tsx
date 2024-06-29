@@ -1,13 +1,13 @@
 import "./globals.css";
 
-import { Inter } from "next/font/google";
+import { M_PLUS_2 } from "next/font/google";
 import { Footer } from "./footer";
 import { Header } from "./header";
 import { ThemeProvider } from "./theme-provider";
 
 export { metadata, viewport } from "./metadata";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = M_PLUS_2({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
@@ -17,10 +17,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      className="dark"
       // For next-theme
       suppressHydrationWarning
     >
-      <body className={inter.className}>
+      <body className={font.className}>
         <ThemeProvider>
           <Header />
           {children}

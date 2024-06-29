@@ -7,7 +7,7 @@ export default async function HomePage() {
   const { message } = await res.json();
 
   return (
-    <main className="flex h-svh flex-col items-center justify-center gap-10">
+    <main className="flex flex-col items-center justify-center gap-10 py-40">
       <ServerComponent message={message} />
       <ClientComponent />
     </main>

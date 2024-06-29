@@ -6,14 +6,19 @@ import { ThemeToggle } from "./theme-toggle";
 
 export const Header = () => {
   return (
-    <header className="flex w-full flex-col items-center justify-center gap-4 p-4">
-      <div className="flex w-full min-w-xs max-w-xl items-center justify-center">
+    <header className="flex w-full flex-col items-center justify-center">
+      <div className="flex w-full max-w-xl items-center justify-between p-4">
         <Link
-          gap-1
           href={url.root}
           className="flex items-center justify-center gap-1"
         >
-          <Image src={Logo} alt="honon" width={80} height={80} />
+          <Image
+            src={Logo}
+            loading="eager"
+            alt="service logo"
+            width={80}
+            height={80}
+          />
           <h1 className="font-black text-6xl">HonoN</h1>
         </Link>
         <ThemeToggle />
