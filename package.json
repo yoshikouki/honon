@@ -12,6 +12,7 @@
     "update:all": "bun update --latest"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.1.0",
     "babel-plugin-react-compiler": "^0.0.0-experimental-696af53-20240625",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
