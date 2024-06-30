@@ -1,8 +1,7 @@
-import { url } from "@/lib/url";
+import { client } from "@/server/client";
 
 export const ServerComponent = async () => {
-  const reqUrl = `http://localhost:8888${url.time}`;
-  const res = await fetch(reqUrl, { cache: "no-store" });
+  const res = await client.time.$get();
   const { message } = await res.json();
 
   return (
