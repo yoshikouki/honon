@@ -13,7 +13,7 @@ export const ClientComponent = () => {
     },
   );
 
-  if (isLoading) return <div className="text-2xl tabular-nums">Loading...</div>;
+  if (isLoading) return <div>Loading...</div>;
   if (error) {
     return <div className="text-2xl tabular-nums">Error</div>;
   }
