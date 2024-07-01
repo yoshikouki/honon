@@ -1,2 +1,4 @@
+preload = ["./src/lib/shim.ts"]
+
 [test]
-preload = "./src/tests/setup.ts"
+preload = ["./src/tests/setup.ts"]
