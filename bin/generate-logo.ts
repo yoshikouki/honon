@@ -1,10 +1,10 @@
 // biome-ignore lint/style/useNodejsImportProtocol: <explanation>
 import { parseArgs } from "util";
-import { renderLogoSVG } from "@/app/logo.svg/logo";
+import { renderLogoSVG } from "@/app/logo.webp/logo";
 import sharp from "sharp";
 
 const DEFAULT_CONFIG = {
-  DEFAULT_INPUT: "./public/logo.svg",
+  DEFAULT_INPUT: "./public/logo.webp",
   DEFAULT_OUTPUT: "./public/logo.webp",
   DEFAULT_QUALITY: 80,
 };
