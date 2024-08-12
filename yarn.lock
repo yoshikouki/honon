@@ -1155,7 +1155,7 @@ nanoid@^3.3.6, nanoid@^3.3.7:
   resolved "https://registry.npmjs.org/nanoid/-/nanoid-3.3.7.tgz"
   integrity sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==
 
-"next@^14.0.0-0 || ^15.0.0-0", "next@^15.0.0-rc.0":
+"next@^14.0.0-0 || ^15.0.0-0", next@rc:
   version "15.0.0-rc.0"
   resolved "https://registry.npmjs.org/next/-/next-15.0.0-rc.0.tgz"
   integrity sha512-IWcCvxUSCAuOK5gig4+9yiyt/dLKpIa+WT01Qcx4CBE4TtwJljyTDnCVVn64jDZ4qmSzsaEYXpb4DTI8qbk03A==
@@ -1386,12 +1386,12 @@ queue-microtask@^1.2.2:
   dependencies:
     loose-envify "^1.1.0"
 
-"react@19.0.0-rc-2d2cc042-20240809":
+"react@19.0.0-rc-2d2cc042-20240809", react@rc:
   version "19.0.0-rc-2d2cc042-20240809"
   resolved "https://registry.npmjs.org/react/-/react-19.0.0-rc-2d2cc042-20240809.tgz"
   integrity sha512-+yW7RLHtdV9YKmHxFJoKrC80vJPv2If5J8MVw7Ui7NTcBs7bIpwSIaY2vrciPRb7B7JqG3TsZHxo12q/inYUhw==
 
-"react@19.0.0-rc-f994737d14-20240522", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0 || ^19.0.0-0", "react@^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc", "react@^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc", "react@^18.2.0 || ^19.0.0-0", "react@^19.0.0-rc-2d2cc042-20240809":
+"react@19.0.0-rc-f994737d14-20240522", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0 || ^19.0.0-0", "react@^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc", "react@^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc", "react@^18.2.0 || ^19.0.0-0":
   version "19.0.0-rc-fb9a90fa48-20240614"
   resolved "https://registry.npmjs.org/react/-/react-19.0.0-rc-fb9a90fa48-20240614.tgz"
   integrity sha512-nvE3Gy+IOIfH/DXhkyxFVQSrITarFcQz4+shzC/McxQXEUSonpw2oDy/Wi9hdDtV3hlP12VYuDL95iiBREedNQ==
@@ -1404,7 +1404,7 @@ queue-microtask@^1.2.2:
     loose-envify "^1.1.0"
     scheduler "^0.23.2"
 
-"react-dom@19.0.0-rc-f994737d14-20240522", "react-dom@^19.0.0-rc-2d2cc042-20240809":
+"react-dom@19.0.0-rc-f994737d14-20240522", react-dom@rc:
   version "19.0.0-rc-2d2cc042-20240809"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-19.0.0-rc-2d2cc042-20240809.tgz"
   integrity sha512-fe+8TmO3zevW08+LPk9qS93LE2Y5H87l3q6dHNM7zQpelCNCeaPGeSoHAsehx2e2LRv7Iapb/qJLAUUUT9pnvw==
