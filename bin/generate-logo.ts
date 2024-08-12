@@ -69,7 +69,7 @@ const convertToWebP = async (string: string, quality: number) => {
 };
 
 const main = async () => {
-  const { input: inputPath, output: outputPath, quality } = parseArguments();
+  const { output: outputPath, quality } = parseArguments();
 
   const svgString = await renderLogoSVG();
   const file = Bun.file(outputPath, { type: "text/xml" });
