@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   ],
   robots: "index, follow",
   openGraph: {
-    url: "/",
+    url: "https://honon.app",
     title,
     description,
     images: [
