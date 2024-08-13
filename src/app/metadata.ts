@@ -1,9 +1,10 @@
 import type { Metadata, Viewport } from "next";
 
-export const title = "honon - Awesome App";
-export const description = "honon is an awesome app!";
+export const title = "yskk - Awesome App";
+export const description = "yskk is an awesome app!";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://honon.vercel.app/"),
   title,
   description,
   keywords: [],
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
   ],
   robots: "index, follow",
   openGraph: {
-    url: "https://honon.app",
+    url: "/",
     title,
     description,
     images: [
