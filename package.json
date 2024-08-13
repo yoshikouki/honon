@@ -25,7 +25,7 @@
     "react-dom": "19.0.0-rc-2d2cc042-20240809",
     "satori": "^0.10.14",
     "swr": "^2.2.5",
-    "tailwind-merge": "^2.5.1",
+    "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
