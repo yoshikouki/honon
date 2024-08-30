@@ -16,4 +16,4 @@ export const OPTIONS = handle(app);
 
 // Build error: Attempt to export a nullable value for "TextDecoderStream"
 // ref: https://github.com/oven-sh/bun/issues/5648
-// export const runtime = "edge";
+export const runtime = "edge";

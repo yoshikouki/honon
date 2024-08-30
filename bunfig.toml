@@ -1,1 +1,3 @@
+preload = ["./src/lib/shim.ts"]
+
 [test]
