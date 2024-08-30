@@ -5,7 +5,7 @@ export async function GET() {
 
   return new Response(svgString, {
     headers: {
-      "Content-Type": "image/svg+xml",
+      "Content-Type": "image/webp",
     },
   });
 }
